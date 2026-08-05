@@ -23,7 +23,9 @@ Each card features:
 ├── assets/
 │   ├── background.png
 │   ├── logo.png
-│   └── qr-doctors.png
+│   ├── qr-businesses.png
+│   ├── qr-doctors.png
+│   └── qr-professionals.png
 ├── doctors.html
 ├── professionals.html
 ├── businesses.html
