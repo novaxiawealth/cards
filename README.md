@@ -15,6 +15,8 @@ Each card features:
 - `doctors.html` — Doctors and medical specialists
 - `professionals.html` — Health and wellness professionals
 - `businesses.html` — Businesses and organisations
+- `angel-advisor.html` — Bilingual myAngelAdvisor invitation
+- `angel-business.html` — Bilingual myAngelBusiness invitation
 
 ## Project Structure
 
@@ -24,8 +26,13 @@ Each card features:
 │   ├── background.png
 │   ├── logo.png
 │   ├── qr-businesses.png
+│   ├── qr-doctors.png
 │   └── qr-professionals.png
 ├── doctors.html
 ├── professionals.html
 ├── businesses.html
+├── angel-advisor.html
+├── angel-business.html
+├── angel-styles.css
 └── styles.css
+```
