@@ -150,12 +150,12 @@ h1 {
 }
 
 .action-button {
-  min-height: 52px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 24px;
+  padding: 12px 22px;
   color: #fff;
   background: var(--navy);
   border-radius: 14px;
@@ -164,6 +164,38 @@ h1 {
   font-weight: 800;
   text-decoration: none;
   transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.download-button {
+  width: fit-content;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 9px auto 0;
+  padding: 8px 15px;
+  color: var(--deep-navy);
+  background: #eaf7f7;
+  border: 1px solid rgba(83, 170, 167, 0.16);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+
+.download-button[href]:hover {
+  color: var(--navy);
+  background: #dff2f2;
+}
+
+.download-button[href]:focus-visible {
+  outline: 3px solid rgba(83, 170, 167, 0.45);
+  outline-offset: 3px;
+}
+
+.download-button.is-placeholder {
+  cursor: default;
 }
 
 .action-button:hover {
@@ -212,7 +244,8 @@ h1 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .action-button {
+  .action-button,
+  .download-button {
     transition: none;
   }
 }
