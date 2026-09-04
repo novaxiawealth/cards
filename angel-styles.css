@@ -350,22 +350,24 @@ a {
 }
 
 .journey-card::before {
-  content: "0" counter(journey);
+  content: attr(data-step);
   position: absolute;
-  width: 48px;
+  min-width: 76px;
   height: 48px;
   top: -18px;
   left: 50%;
   display: grid;
   place-items: center;
   transform: translateX(-50%);
+  padding: 0 13px;
   color: #102f29;
   background: linear-gradient(145deg, #f5cf79, #b56c02);
   border: 3px solid var(--forest-deep);
-  border-radius: 50%;
+  border-radius: 999px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 800;
+  letter-spacing: 0.07em;
 }
 
 .journey-card h2 {
@@ -647,10 +649,11 @@ a {
   }
 
   .business-theme .journey-card::before {
-    width: 39px;
+    min-width: 72px;
     height: 39px;
     top: -15px;
-    font-size: 10px;
+    padding-inline: 10px;
+    font-size: 9px;
   }
 
   .business-theme .journey-card h2 {
